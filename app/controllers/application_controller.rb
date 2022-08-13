@@ -3,6 +3,10 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
+    "Sinatra is running"
+  end
+
+  get "/cards" do
     Card.all.to_json
   end
 
